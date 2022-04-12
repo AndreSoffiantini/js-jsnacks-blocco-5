@@ -1,0 +1,14 @@
+/* Scrivi una funzione che accetti una stringa come argomento 
+e la ritorni girata (es. Ciao -> oaiC) */
+
+function reverseString(input_string) {
+
+    const string_array = Array.from(input_string);
+
+    const reverse_string_array = string_array.reverse();
+
+    return reverse_string_array.toString();
+
+}
+
+console.log(reverseString("ciao"));
