@@ -1,7 +1,9 @@
 /* Scrivi una funzione che accetti una stringa come argomento 
 e la ritorni girata (es. Ciao -> oaiC) */
 
-function reverseString(input_string) {
+// Prima soluzione
+
+/* function reverseString(input_string) {
 
     const string_array = Array.from(input_string);
 
@@ -9,6 +11,15 @@ function reverseString(input_string) {
 
     return reverse_string_array.toString();
 
+}
+
+console.log(reverseString("ciao")); */
+
+// Seconda soluzione
+
+function reverseString(input_string) {
+
+    return input_string.split("").reverse().join("")
 }
 
 console.log(reverseString("ciao"));
